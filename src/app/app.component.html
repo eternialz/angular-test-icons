@@ -1,0 +1,13 @@
+<span class="icon-nintendo-64"></span>
+<span class="icon-nes"></span>
+<span class="icon-logo-discord"></span>
+
+<br />
+<hr />
+<br />
+
+<ul>
+  <li *ngFor="let attrib of mentions.attributions">
+    <a [href]="attrib.url">{{ attrib.text }}</a> | <a [href]="attrib.licenceUrl">licence</a>
+  </li>
+</ul>
